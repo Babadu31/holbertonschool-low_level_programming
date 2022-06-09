@@ -2,7 +2,7 @@
 
 /**
  *
- * print_alphabet - vérifier la description 
+ * print_alphabet - vérifier la description
  * Description: imprimer l'alphabet en minuscule et suivi d'un saut à la ligne
  * Return: rien.
  */
