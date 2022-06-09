@@ -1,13 +1,19 @@
 #include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - écrit le charactère c jusqu'a stdout
- * @c: le caractère à imprimer
- *
- * Return: si succés 1.
- * en erreur, -1 est retourné, et errno est placé correctement.
+ * main - vérifier description
+ * Description: imprime le mot _putchar suivie d'un saut à la ligne
+ * Return: 0.
  */
-int _putchar(char c)
+int main(void)
 {
-return (write(1, &c, 1));
+char word[8] = "_putchar";
+int i;
+
+for (i = 0; i < 8; i++)
+_putchar(word[i]);
+_putchar('\n');
+
+return (0);
 }
