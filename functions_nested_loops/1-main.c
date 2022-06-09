@@ -2,7 +2,6 @@
 
 /**
  * main - vérifier le code
- *
  * Return: toujours 0.
  */
 int main(void)
