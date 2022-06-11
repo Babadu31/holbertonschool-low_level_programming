@@ -30,9 +30,10 @@ else if (exp >= 10)
 {
 _putchar(',');
 _putchar(' ');
-_putchar((exp / 10) + '0')
+_putchar((exp / 10) + '0');
 _putchar((exp % 10) + '0');
 }
 }
 _putchar('\n');
+}
 }
