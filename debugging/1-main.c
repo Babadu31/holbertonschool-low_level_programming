@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - teste la fonction qui imprime si l'entier est positif ou négatif
  * Return: 0
