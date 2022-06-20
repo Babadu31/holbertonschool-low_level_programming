@@ -23,6 +23,7 @@ if (s[x] == accept[y])
 z++;
 trap = 1;
 }
+}
 if (trap == 0)
 {
 return (z);
