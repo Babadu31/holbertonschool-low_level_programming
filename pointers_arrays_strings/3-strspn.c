@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strspn - obtient la longueur d'une sous-chaine de préfixe 
+ * *_strspn - obtient la longueur d'une sous-chaine de préfixe
  * @s: chaîne à évaluer
  * @accept: chaine contenant la listes des caractères à rechercher dans s
  * Return: le nombre d'octets dans le segment initial
