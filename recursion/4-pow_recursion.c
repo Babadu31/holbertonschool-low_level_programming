@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _pow_recursive - renvoie la valeur de x élevée à la puissance y
+ * _pow_recursion - renvoie la valeur de x élevée à la puissance y
  * @x: numéro donné
  * @y: exposant
  * Return: affiche le résultat de la valeur de x
