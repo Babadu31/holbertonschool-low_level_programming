@@ -1,48 +1,49 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * str_concat - créer un train à deux wagons
  * @s1: premier wagons
  * @s2: deuxième wagons
- * Return: train de s1 et s2
+ * Return: train des deux wagons s1 et s2
  */
 
 char *str_concat(char *s1, char *s2)
 {
-int ls1, ls2, x = 0;
-char *array;
-
-if (s1 == NULL || s2 == NULL)
-s1 = s2 = "";
-
-for (ls1 = 0; ls1 <= *s1; ls1++)
+int x, z;
+int ls1;
+int ls2;
+char *rslt;
+if (s1 == NULL)
 {
+s1 = "";
 }
-
-for (ls2 = 0; ls2 <= *s2; ls2++)
+if (s2 == NULL)
 {
+s2 = "";
 }
-
-array = malloc(sizeof(char) * (ls1 + ls2 + 1));
-
-if (array == NULL)
+if (s1 == NULL && s2 == NULL)
+{
+s1 = "";
+s2 = "";
+}
+ls1 = strlen(s1);
+ls2 = strlen(s2);
+rslt = malloc(sizeof(char) * (ls1 + ls2) +1);
+if (rslt == NULL)
+{
 return (NULL);
-
-while (*s1)
-{
-array[x] = *s1;
-x++;
-s1++;
 }
-
-while (*s2)
+for (x = 0; s1[x]; x++)
 {
-array[x] = *s2;
-x++;
-s2++;
+rslt[x] = s1[x];
 }
-
-return (array);
+for (z = 0; s2[z]; z++)
+{
+rslt[x] = s2[z];
+x++;
+}
+rslt[x] = '\0';
+return (rslt);
 }
