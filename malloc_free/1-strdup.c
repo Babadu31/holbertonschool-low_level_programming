@@ -1,5 +1,5 @@
 #include "main.h"
-	#include <stdlib.h>
+#include <stdlib.h>
 
 /**
  * _strdup - renvoie un pointeur vers un espace
@@ -16,7 +16,8 @@ unsigned int x, z;
 if (str == NULL)
 return (NULL);
 
-for (x = 0; str[x] != '\0'; x++);
+for (x = 0; str[x] != '\0'; x++)
+;
 
 strout = (char *)malloc(sizeof(char) * (x + 1));
 
