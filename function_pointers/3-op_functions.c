@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "3-calc.h"
 
 /**
  * op_add - opérateur pour addition
@@ -25,7 +24,7 @@ return (a - b);
 
 /**
  * op_mul - opérateur de multiplication
- * @a: premier int 
+ * @a: premier int
  * @b: deuxieme int
  * Return: produit des deux nombres
  */
