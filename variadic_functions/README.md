@@ -1,0 +1,1 @@
+What happens when an irresistible force meets an immovable object?
